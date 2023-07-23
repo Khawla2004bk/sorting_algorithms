@@ -2,6 +2,20 @@
 #include <stdbool.h>
 
 /**
+ * swapint - Swap two integers in an array
+ * @i: first integer to swap
+ * @j: second integer to swap
+ */
+void swapint(int *i, int *j)
+{
+	int temp;
+
+	temp = *i;
+	*i = *j;
+	*j = temp;
+}
+
+/**
  * bubble_sort - sorts an array of integers in ascending order
  * @array: array of integers to sort
  * @size: size of the array
