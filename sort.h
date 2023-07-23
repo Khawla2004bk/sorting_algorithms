@@ -47,7 +47,7 @@ void swapnode(listint_t **head, listint_t **i, listint_t *j)
 	if ((*i)->prev != NULL)
 		(*i)->prev->next = j;
 	else
-		*h = j;
+		*head = j;
 	(*i)->prev = j;
 	*i = j->prev;
 }
